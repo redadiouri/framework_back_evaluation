@@ -12,14 +12,14 @@
             <!-- Nom -->
             <div>
                 <x-input-label for="nom" :value="__('Nom')" />
-                <x-text-input id="nom" class="block mt-2 w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus:border-indigo-500 focus:ring-indigo-500 transition" type="text" name="nom" :value="old('nom')" placeholder="Ex: Diouri" required autofocus autocomplete="family-name" />
+                <x-text-input id="nom" class="block mt-2 w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus:border-indigo-500 focus:ring-indigo-500 transition" type="text" name="nom" :value="old('nom')" placeholder="Ex: Dupont" required autofocus autocomplete="family-name" />
                 <x-input-error :messages="$errors->get('nom')" class="mt-2" />
             </div>
 
             <!-- Prenom -->
             <div>
                 <x-input-label for="prenom" :value="__('Prenom')" />
-                <x-text-input id="prenom" class="block mt-2 w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus:border-indigo-500 focus:ring-indigo-500 transition" type="text" name="prenom" :value="old('prenom')" placeholder="Ex: Reda" required autocomplete="given-name" />
+                <x-text-input id="prenom" class="block mt-2 w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus:border-indigo-500 focus:ring-indigo-500 transition" type="text" name="prenom" :value="old('prenom')" placeholder="Ex: Jean" required autocomplete="given-name" />
                 <x-input-error :messages="$errors->get('prenom')" class="mt-2" />
             </div>
         </div>
